@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chainalysis.com/api/kyt/v1/users/e38a7c51-0168-46e8-899e-6ae70acade5c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Token:
+      - b2ddeb7cff659365f524bced1dd3128c6db2bcb6bf9376670056627979570fe4
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 11 Jan 2025 10:01:43 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Access-Control-Request-Headers
+      - Access-Control-Request-Method
+      - Origin
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Referrer-Policy:
+      - no-referrer,same-origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9004112e0db94086-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"score":"red","scoreUpdatedDate":"2025-01-11T09:46:39.749204Z","exposureDetails":[{"cluster":{"name":"Bittrex.com","categoryId":21},"sentIndirectExposure":111.4,"sentDirectExposure":111.4,"receivedIndirectExposure":0.0,"receivedDirectExposure":0.0},{"cluster":{"name":"unnamed
+        service","categoryId":null},"sentIndirectExposure":1151.32,"sentDirectExposure":0.0,"receivedIndirectExposure":141.94,"receivedDirectExposure":0.0},{"cluster":{"name":"BTCMarkets.net","categoryId":21},"sentIndirectExposure":0.0,"sentDirectExposure":0.0,"receivedIndirectExposure":177.65,"receivedDirectExposure":0.0}],"lastActivity":"2025-01-11T09:27:24Z","riskScore":"SEVERE","creationDate":null,"userId":"e38a7c51-0168-46e8-899e-6ae70acade5c"}'
+  recorded_at: Sat, 11 Jan 2025 10:01:43 GMT
+recorded_with: VCR 6.3.1

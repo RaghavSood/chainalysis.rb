@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    chainalysis (0.1.0)
+    chainalysis (0.2.0)
       faraday (~> 2.12)
       json (~> 2.9)
 
