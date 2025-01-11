@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chainalysis.com/api/kyt/v2/transfers/9a78cde9-890c-3563-8f24-2b99fcb96409
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Token:
+      - b2ddeb7cff659365f524bced1dd3128c6db2bcb6bf9376670056627979570fe4
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 11 Jan 2025 04:45:31 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Access-Control-Request-Headers
+      - Access-Control-Request-Method
+      - Origin
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Referrer-Policy:
+      - no-referrer,same-origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 900241fe5c67d3f9-KIX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"updatedAt":"2025-01-11T04:45:08.107532","asset":"BTC","assetId":null,"network":"BITCOIN","transferReference":"4a7fd1dbb44bb37e80fcaab177fda3d432c1f383f9483abc8d597a0a1b47cb91:bc1qwa8qddnn8g98kgqjhkh5gpcad8n2y87d6gzh6p","tx":"4a7fd1dbb44bb37e80fcaab177fda3d432c1f383f9483abc8d597a0a1b47cb91","idx":0,"usdAmount":141.94,"assetAmount":0.00150795,"timestamp":"2025-01-11T04:11:37.000+00:00","outputAddress":"bc1qwa8qddnn8g98kgqjhkh5gpcad8n2y87d6gzh6p","externalId":"9a78cde9-890c-3563-8f24-2b99fcb96409"}'
+  recorded_at: Sat, 11 Jan 2025 04:45:31 GMT
+recorded_with: VCR 6.3.1

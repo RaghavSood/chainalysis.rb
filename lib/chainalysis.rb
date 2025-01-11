@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "chainalysis/version"
+require_relative 'chainalysis/version'
 
 module Chainalysis
   class Error < StandardError; end

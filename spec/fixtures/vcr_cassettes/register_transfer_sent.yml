@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.chainalysis.com/api/kyt/v2/users/e38a7c51-0168-46e8-899e-6ae70acade5c/transfers
+    body:
+      encoding: UTF-8
+      string: '{"network":"Bitcoin","asset":"BTC","transferReference":"523c98527ec41c42979e02b9c034f7a92428b658230151cedcaacde7fd8e3800:1QJUiNsNfji6mR1FjAwf6Eg9NxxHPoxpWL","direction":"sent"}'
+    headers:
+      Token:
+      - b2ddeb7cff659365f524bced1dd3128c6db2bcb6bf9376670056627979570fe4
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Date:
+      - Sat, 11 Jan 2025 05:44:25 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Access-Control-Request-Headers
+      - Access-Control-Request-Method
+      - Origin
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Referrer-Policy:
+      - no-referrer,same-origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9002984678a0f892-SIN
+    body:
+      encoding: UTF-8
+      string: '{"updatedAt":null,"asset":"BTC","assetId":null,"network":"BITCOIN","transferReference":"523c98527ec41c42979e02b9c034f7a92428b658230151cedcaacde7fd8e3800:1QJUiNsNfji6mR1FjAwf6Eg9NxxHPoxpWL","tx":null,"idx":null,"usdAmount":null,"assetAmount":null,"timestamp":null,"outputAddress":null,"externalId":"2f9a62a4-1561-3f14-8f70-27a3cb4e0fa4"}'
+  recorded_at: Sat, 11 Jan 2025 05:44:25 GMT
+recorded_with: VCR 6.3.1
